@@ -5,22 +5,65 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <style type="text/tailwindcss">
-    @theme {
-        --color-clifford: #da373d;
-      }
-    </style>
+  <style>
+    :root {
+      --color-primary: #202f59;
+      --color-primaryS: #eb4e2f;
+    }
+  </style>
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </head>
 
-<body>
+<body class="w-full h-full">
   <header>
 
   </header>
   <main>
+    <div class="bg-gray-900 text-white">
+      <div class="relative w-full h-[420px] sm:h-[350px] md:h-[380px] lg:h-[440px] overflow-hidden">
+        <!-- Image with black overlay -->
+        <img src="./Img/everest.jpg" alt="Mountain"
+          class="absolute w-full md:h-full h-[800px] object-cover  opacity-80">
+        <div
+          class="absolute inset-0 bg-opacity-50 flex flex-col justify-center items-center text-center px-4 py-6 sm:py-8 md:py-12 lg:py-16">
+          <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 justify-between lg:gap-12 text-white">
+            <!-- Satisfied Customers -->
+            <div class="flex flex-col items-center px-4">
+              <ion-icon class="text-[var(--color-primaryS)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold"
+                name="person-outline"></ion-icon>
+              <div class="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">2,499,999+</div>
+              <div class="text-[var(--color-primaryS)] text-sm sm:text-lg md:text-xl font-bold mt-1">Satisfied Customers
+              </div>
+            </div>
+            <!-- Destinations -->
+            <div class="flex flex-col items-center px-4">
+              <ion-icon class="text-[var(--color-primaryS)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold"
+                name="person-outline"></ion-icon>
+              <div class="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">19,999+</div>
+              <div class="text-[var(--color-primaryS)] text-sm sm:text-lg md:text-xl font-bold mt-1">Destinations</div>
+            </div>
+            <!-- Tours -->
+            <div class="flex flex-col items-center px-4">
+              <ion-icon class="text-[var(--color-primaryS)] text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold"
+                name="person-outline"></ion-icon>
+              <div class="text-3xl sm:text-4xl md:text-5xl font-bold mt-2">13,000+</div>
+              <div class="text-[var(--color-primaryS)] text-sm sm:text-lg md:text-xl font-bold mt-1">Tours</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+
+
+
+
 
   </main>
+
   <footer>
-    <div class="bg-[#202f59] text-white py-10">
+    <div class="bg-[var(--color-primary)] text-white py-10">
       <div class="max-w-7xl mx-auto px-6 lg:px-8 grid grid-cols-1 md:grid-cols-3 gap-8">
         <!-- Quick Menu -->
         <div>
